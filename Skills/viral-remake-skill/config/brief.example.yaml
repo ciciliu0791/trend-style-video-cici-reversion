@@ -1,0 +1,30 @@
+# Paths are relative to this file. No credentials belong here.
+project: my-remake
+mode: creative                 # ad | creative; legacy briefs with product.name infer ad
+fidelity: adaptation            # close-timing requires measured source cuts
+quality: balanced
+platform: short video
+text_policy: null               # ASK before production: generated | post | none
+cast: []                       # [{id: Manyue, references: [../inputs/front.png], invariants: "Preserve asymmetric markings"}]
+person: {reference: null}       # legacy single-lead reference still supported
+product: {images: [], selling_points: []} # add name/actions/geometry for an ad
+references: []                 # [{path: ../inputs/scene.png, role: reference_image, purpose: environment}]
+copy: {language: English, cta: ''}
+audio:
+  approach: null                # confirm: original score / supplied authorized audio / silent / generated dialogue
+  generate_audio: false
+output:
+  duration: 30
+  ratio: '16:9'
+  resolution: 720p
+  route: plates                 # whole for a simple supported multi-shot clip
+  takes: 1
+  use_reference_video: false
+  image_settings: {}            # e.g. size: 2560x1440 ONLY after capability verification
+routes: {}                      # image/video/text: ../run/preflight/<modality>-route.json
+pricing: null                   # ../run/pricing.json; request-hash-bound units and rates
+budget:
+  cap: null
+  currency: null
+  authorization: null           # actual user decision/reference, never fabricated
+  max_attempts_per_job: 2

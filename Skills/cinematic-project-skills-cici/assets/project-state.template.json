@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "project_id": "replace-with-project-id",
+  "workflow_owner": "trend-style-video",
+  "scope": "planning",
+  "character_profiles": [],
+  "last_event": null,
+  "artifacts": [],
+  "stages": [
+    {"id": "P1", "applicable": true, "status": "not-started", "inputs": [], "outputs": [], "checks": [], "next_action": "Recover the brief and existing decisions."},
+    {"id": "P2", "applicable": true, "status": "not-started", "inputs": [], "outputs": [], "checks": [], "next_action": "Map the audience mechanism to observable action and sound."},
+    {"id": "P3", "applicable": false, "reason": "Planning only; no production currently requested.", "status": "not-started", "inputs": [], "outputs": [], "checks": [], "next_action": "Activate only within the requested production scope."},
+    {"id": "P4", "applicable": false, "reason": "No media generation authorized by this template.", "status": "not-started", "inputs": [], "outputs": [], "checks": [], "next_action": "Do not create media tasks."},
+    {"id": "P5", "applicable": false, "reason": "No edit currently requested.", "status": "not-started", "inputs": [], "outputs": [], "checks": [], "next_action": "Retain existing edits."},
+    {"id": "P6", "applicable": false, "reason": "No media export currently requested.", "status": "not-started", "inputs": [], "outputs": [], "checks": [], "next_action": "Deliver the requested planning document only."}
+  ],
+  "tasks": [
+    {
+      "id": "brief",
+      "stage": "P1",
+      "scope": "planning",
+      "operation": "analyze",
+      "status": "pending",
+      "paid": false,
+      "depends_on": [],
+      "input_versions": {},
+      "outputs": [],
+      "checks": [],
+      "package": null,
+      "authorization": null,
+      "next_cost": null,
+      "executions": []
+    }
+  ],
+  "authorizations": [],
+  "checks": [],
+  "questions": [],
+  "delivery": null
+}

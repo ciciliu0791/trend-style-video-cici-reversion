@@ -1,0 +1,4 @@
+interface:
+  display_name: "Short Drama & Video Creation"
+  short_description: "Create reviewed drafts and final-quality short videos"
+  default_prompt: "Use $short-drama-video-creation to develop a short video, assess its references, and take an approved draft through final production."
